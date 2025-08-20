@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    padding: 2rem;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+#balance {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2ecc71;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+#interface {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#formInterface {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+label {
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+#submitBtn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#submitBtn:hover {
+    background: #2980b9;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.row select {
+    flex: 1;
+}
+
+#list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+#list li:hover {
+    transform: translateX(5px);
+}
+
+#list button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#list button:hover {
+    background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    #interface {
+        padding: 1rem;
+    }
+    
+    #list li {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance App</title>
+</head>
+<body>
+    <h1>Finance Tracker</h1>
+    <div id="balance">Balance: ₹0</div>
+    <br>
+    <br>
+    <div id="interface">
+        <form action="" id="formInterface">
+            <label for="amount">Enter Amount</label>
+            <input type="number" placeholder="Enter your Amount" name="amount" id="amt" required>
+            <br>
+            <br>
+            <label for="description">Description</label>
+            <input type="text" id="desc" name="description" placeholder="Add some description">
+            <br>
+            <br>
+            <select name="" id="amountType">
+                <option value="" disabled selected>Select Type of Amount</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <br>
+            <br>
+            <button id="submitBtn" type="submit" >Add Transaction</button>
+            <br>
+            <br>
+            <div class="row">
+                <select name="" id="typeFilter">
+                <option value="all">All Transactions</option>
+                <option value="expense">Expense Transactions</option>
+                <option value="income">Income Transactions</option>
+            </select>
+            <select name="" id="dateFilter">
+                <option value="" disabled selected>Select the Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            </div>
+            
+            <ul id="list"></ul>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</body>
+</html>
